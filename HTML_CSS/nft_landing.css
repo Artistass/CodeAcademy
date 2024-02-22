@@ -21,15 +21,19 @@ body {
   --Pink-Color-LG-: #ff3999bb;
   --Orange-Color-LG-: #ff8239bb;
   --Green-Color-LG-: #39ffa0bb;
+
   /* Button_Hover_Colors */
   --Grey-Color-H-: rgba(128, 128, 128, 0.563);
   --Pink-Color-H-: #ff399992;
+
   /* Button_Active_Colors */
   --Pink-Color-LG-A-: #ff39996a;
   --Orange-Color-LG-A-: #ff823960;
   --Green-Color-LG-A-: #39ff9f50;
   --Grey-Color-A-: rgba(128, 128, 128, 0.417);
   --Pink-Color-A-: #ff39995d;
+
+  /* Else */
   
 }
   
@@ -159,6 +163,10 @@ p {
       display: flex;
       overflow: hidden;
     }
+    .signUp_leftSide {
+      padding: 4rem 0 3rem 0;
+      width: 70%;
+    }
     .signUp_image {
       position: absolute;
       width: 100%;
@@ -166,11 +174,6 @@ p {
       top: -10px;
     }
     
-    .signUp_leftSide {
-      padding: 4rem 0 3rem 0;
-      width: 70%;
-    }
-
     @media screen and (min-width: 992px) {
       .signUp {
         display: flex;
@@ -201,7 +204,6 @@ p {
       padding: 5rem 0 3rem 0;
     }
 
-    
     .launch_text {
       color: var(--Black-Color-);
       margin-right: 3rem;
@@ -280,20 +282,13 @@ p {
   }
   span
   a:hover {
-    color: rgba(128, 128, 128, 0.555);
+    color: var(--Grey-Color-H-);
     cursor: pointer;
   }
   span
   a:active {
-    color: rgba(128, 128, 128, 0.292);
+    color: var(--Grey-Color-A-);
     cursor: pointer;
-  }
-  
-  
-  .features_card_background {
-    background-color: rgba(190, 188, 188, 0.195);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
   }
   
   .features_card_wrapper {
@@ -302,6 +297,7 @@ p {
     overflow: auto;
     margin: 2rem 2rem 4rem 2rem;
   }
+  
   .features_card_container {
     display: flex;
     flex-direction: column;
@@ -309,14 +305,19 @@ p {
     margin: auto;
     white-space: nowrap;
   }
+
   .features_card_text_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-
-
+  .features_card_background {
+    background-color: rgba(190, 188, 188, 0.195);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
 /* Features Card-Text */
 .cardText-1{
   color: var(--Gold-Color-);
@@ -337,6 +338,11 @@ p {
 }
 
 @media screen and (min-width: 992px) {
+  .features {
+    width: 95%;
+    margin: auto;
+  }
+
   .features_card_wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -349,11 +355,6 @@ p {
     width: 100%;
     margin: auto;
     white-space: normal;
-  }
-
-  .features {
-    width: 95%;
-    margin: auto;
   }
 }
 
